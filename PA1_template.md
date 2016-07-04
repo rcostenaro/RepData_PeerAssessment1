@@ -34,7 +34,7 @@ StepsPerDay <- tapply(activity$steps, activity$date, sum, na.rm = TRUE)
 hist(StepsPerDay, breaks=10, xlab="Number of Steps", ylab="Frquency", main="Histogram of the total number of steps taken each day.")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+![](unnamed-chunk-3-1.png)
 
 3. Calculate and report the *mean* and *median* of the total number of steps taken per day
 
@@ -113,7 +113,7 @@ axis(1, at=ActivityPattern$interval, labels=ActivityPattern$Time)
 axis(2)
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
+![](unnamed-chunk-7-1.png)
 
 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -232,7 +232,7 @@ StepsPerDay <- tapply(activityFilled$steps, activityFilled$date, sum, na.rm = TR
 hist(StepsPerDay, breaks=10, xlab="Number of Steps", ylab="Frquency", main="Histogram of the total number of steps taken each day.")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-13-1.png)<!-- -->
+![](unnamed-chunk-13-1.png)
 
 ```r
 mean(StepsPerDay)
@@ -295,5 +295,5 @@ library(lattice)
 xyplot(steps ~ interval | WeekFactor, data=ActivityPattern, type="l", xlab = "Interval", ylab = "Number of steps", layout = c(1, 2))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-16-1.png)<!-- -->
+![](unnamed-chunk-16-1.png)
 
